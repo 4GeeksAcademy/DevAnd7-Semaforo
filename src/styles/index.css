@@ -1,8 +1,9 @@
-.caja{
-    max-width: 150px;
-    max-height: 300px;
+.cajaPeq {
+    width: 25px;
+    height: 60px;
 }
 
-.luz{
-    background-color: darkred;
+.cajaGra {
+    max-width: 150px;
+    max-height: 350px;
 }
