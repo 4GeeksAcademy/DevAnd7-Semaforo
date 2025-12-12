@@ -9,10 +9,13 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import Home from './components/Home';
+import LuzRoja from './components/LuzRoja';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+    <div className='container'></div>
+    <div className='cajaPeq bg-black d-flex justify-content-center p-2'>
+    <LuzRoja />
+    </div>
   </React.StrictMode>,
 )
