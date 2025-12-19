@@ -17,11 +17,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <div className='cajaPeq bg-black'></div>
       <div className='cajaGra bg-black d-flex flex-column p-2 gap-2'>
         <Luz
-          color="red" />
+          color="bg-danger" />
           <Luz
-          color="yellow" />
+          color="bg-warning" />
           <Luz
-          color="green" />
+          color="bg-success" />
       </div>
     </div>
   </React.StrictMode>,

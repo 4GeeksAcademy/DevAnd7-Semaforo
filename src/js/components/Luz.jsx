@@ -1,10 +1,17 @@
-import React from "react";
+import { useState } from "react";
 
 
 //create your first component
-const Luz = (props) => {
+const Luz = ({color}) => {
+	const [isOn, setIsOn] = useState(false);
+
+const changeLight = ()=>{
+	setIsOn(!isOn);
+}
+
 	return (
-		<div className="luz rounded-circle" style={{background: props.color, width: "100px", height: "100px"}}></div>
+		<div className={`luz rounded-circle ${color} ${isOn ? "shadow-lg":"opacity-50"}`}
+		onClick={changeLight} style={{ width: "100px", height: "100px" }}></div>
 	);
 };
 
